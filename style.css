@@ -5,7 +5,8 @@ body{
 
     background-color: #16101C;
     color: #FFFFFF;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Anek Devanagari', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0%;
 }
 
 #topbox{
@@ -39,7 +40,6 @@ h1{
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     font-size: 0.9vw;
 }
 
@@ -77,6 +77,13 @@ article{
     width: 10vw;
     margin: 0.2vw;
     padding: 1vw;
+    justify-content: space-evenly;
+}
+
+.article-image{
+    width: 9.4vw;
+    height: 7vw;
+
 }
 
 .bredpil{
@@ -89,22 +96,33 @@ article{
 
 h5{
     color: #FF86DD;
-    font-weight: bold;
+    font-weight: 1000;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 0vw;
 }
 
 .typ{
-    font-size: 0.7vw;
+    font-size: 1vw;
+    font-weight: lighter;
+}
+
+h3{
+    margin-bottom: 0.4vw;
+    font-size: 1.2vw;
+    font-weight: lighter;
 }
 
 .namn{
-    font-size: 0.8vw;
-    font-weight: bold;
+    font-size: 1.2vw;
+    font-weight: bolder;
     margin: 0%;
 }
 
 .wear{
-    font-size: 0.8vw;
+    font-size: 1.2vw;
     margin: 0%;
+    font-weight:100;
 }
 
 footer{
