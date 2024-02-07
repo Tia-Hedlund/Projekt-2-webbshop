@@ -9,7 +9,9 @@ body{
 }
 
 #topbox{
-    background-image: url("./");
+    grid-row: 1/2;
+    grid-column: 1/4;
+    background-image: url("./img/csgoskins.webp");
 }
 
 header{
@@ -37,9 +39,42 @@ nav{
 
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: auto;
 }
 
+#article-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    background-color:  #110D13;
+    width: 10vw
+}
+
+h5{
+    color: #FF86DD;
+    font-weight: bold;
+}
+
+.typ{
+    font-size: 0.3vw;
+}
+
+.namn{
+    font-size: 0.5vw;
+    font-weight: bold;
+}
+
+.wear{
+    font-size: 0.5vw;
+}
 
 /* Tablett */
 @media only screen and (min-width: 641px) and (max-width: 1007px) {
