@@ -25,6 +25,7 @@ header{
 
 #goose1{
     height: 4vw;
+    margin: auto;
 }
 
 h1{
@@ -42,7 +43,16 @@ nav{
     font-size: 0.9vw;
 }
 
+.litenpil{
+    height: 1vw;
+    max-height: 1vw;
+    width: 1vw;
+    max-width: 1vw;
+    margin:auto;
+}
+
 .nav-val{
+    margin:auto;
 }
 
 main{
@@ -65,8 +75,16 @@ article{
     flex-direction: column;
     background-color:  #110D13;
     width: 10vw;
-    margin: 1vw;
+    margin: 0.2vw;
     padding: 1vw;
+}
+
+.bredpil{
+    height:4vw;
+    max-height: 4vw;
+    width: 1vw;
+    max-width: 1vw;
+    margin:auto;
 }
 
 h5{
@@ -81,16 +99,19 @@ h5{
 .namn{
     font-size: 0.8vw;
     font-weight: bold;
+    margin: 0%;
 }
 
 .wear{
     font-size: 0.8vw;
+    margin: 0%;
 }
 
 footer{
     grid-row: 3/4;
     grid-column: 1/4;
     background-color:  #110D13;
+    margin: 0%;
 }
 
 /* Tablett */
