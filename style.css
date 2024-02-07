@@ -1,0 +1,52 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 3/8 4/8 1/8;
+
+    background-color: #16101C;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#topbox{
+    background-image: url("./");
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    font-size: 2vw;
+}
+
+#h1-del1{
+    color: #FF86DD;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9vw;
+}
+
+.nav-val{
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Tablett */
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1008px) {
+
+}
