@@ -33,7 +33,7 @@ h1{
     font-size: 2vw;
 }
 
-#h1-del1{
+.h-del1{
     color: #FF86DD;
 }
 
@@ -150,13 +150,13 @@ h5{
     font-weight: lighter;
 }
 
-.namn{
+.namn, h7{
     font-size: 1.2vw;
     font-weight: bolder;
     margin: 0%;
 }
 
-.wear{
+.wear, .info-text{
     font-size: 1.2vw;
     margin: 0%;
     font-weight:100;
@@ -167,14 +167,36 @@ footer{
     grid-column: 1/4;
     background-color:  #110D13;
     margin: 0%;
+
+    display:flex;
+    flex-direction: row;
 }
+
+#logo-box{
+    display:flex;
+    flex-direction: column;
+}
+
+#info-box{
+    display:flex;
+    flex-direction: row;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 
 /* Tablett */
 @media only screen and (min-width: 641px) and (max-width: 1007px) {
 
 }
 
-/* Desktop */
-@media only screen and (min-width: 1008px) {
+/* Mobile */
+@media only screen and (max-width: 640px) {
 
 }
