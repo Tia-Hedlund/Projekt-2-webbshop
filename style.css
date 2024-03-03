@@ -16,12 +16,17 @@ body{
     background-image: url("./img/csgoskins.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 45vw;
+    height: 55vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
     display: flex;
     flex-direction: row;
+    padding-right:1.5vw;
 }
 
 #goose1{
@@ -40,15 +45,69 @@ h1, h6{
 nav{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-left, #nav-right{
+    display: flex;
+    flex-direction: row;
     font-size: 0.9vw;
 }
 
+#nav-left{
+    width: 50vw;
+}
+
+#searchbar, #cart{
+    margin-top: 1.9vw;
+}
+
+#searchbar{
+    max-height: 3vw;
+    margin-right: 1vw;
+}
+
+#cart{
+    max-height: 3vw;
+    max-width: 3vw;
+    margin-right: 1.9vw;
+}
+
+#lower-topbox{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#cs-logo{
+    max-height: 10vw;
+    padding: 1.9vw;
+}
+
+#login, #favorites{
+    margin-bottom: 1.4vw;
+}
+
+#login{
+    max-height: 3vw;
+    margin-right: 1vw;  
+}
+
+#favorites{
+    max-height: 3vw;
+    margin-right: 1.9vw;
+}
+
 .litenpil{
-    height: 1vw;
-    max-height: 1vw;
-    width: 1vw;
-    max-width: 1vw;
-    margin:auto;
+    height: 0.5vw;
+    max-height: 0.5vw;
+    width: 0.7vw;
+    max-width: 0.7vw;
+    align-self: center;
+    padding-bottom: 0.4vw;
+    padding-right: 1.2vw;
 }
 
 .nav-val{
@@ -112,6 +171,14 @@ article{
     justify-content: space-evenly;
 }
 
+#pinkcart{
+    max-height: 5vw;
+    max-width: 5vw;
+    height: 2vw;
+    width: 2vw;
+    margin-left:auto;
+}
+
 .article-image{
     width: 9.4vw;
     height: 7vw;
@@ -168,6 +235,7 @@ footer{
     grid-column: 1/4;
     background-color:  #110D13;
     margin: 0%;
+    padding-bottom: 3vw;
 
     display:flex;
     flex-direction: row;
@@ -188,8 +256,13 @@ footer{
     flex-direction: row;
 }
 
+h6{
+    margin-bottom:0%;
+    padding-bottom:0%;
+}
+
 #logo-img{
-    height: 15vw;
+    height: 12vw;
     margin-top:0%;
     padding-top:0%;
 }
