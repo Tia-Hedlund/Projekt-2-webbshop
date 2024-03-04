@@ -246,7 +246,7 @@ footer{
 #logo-box{
     display:flex;
     flex-direction: column;
-    padding-left: 3vw;
+    padding-left: 2vw;
 
     align-items: center;
 }
@@ -290,12 +290,46 @@ h7{
     padding:2vw;
 }
 
-
-
-
-
 /* Tablett */
 @media only screen and (min-width: 641px) and (max-width: 1007px) {
+    body{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 3/8 4/8 1/8;
+    }
+
+    h3{
+        display:none;
+    }
+
+    aside{
+        display:none;
+    }
+
+    #info-box{
+        margin:auto;
+
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+
+        margin-top: 4vw;
+
+    }
+
+    h6{
+        display:none;
+    }
+
+    h7, .info-text{
+        font-size: 3.5vw;
+        padding-left: 9vw;
+    }
+
+    #logo-box{
+        display:none;
+        padding:0%;
+    }
 
 }
 
