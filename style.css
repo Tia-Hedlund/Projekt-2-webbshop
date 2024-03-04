@@ -171,7 +171,7 @@ article{
     justify-content: space-evenly;
 }
 
-#pinkcart{
+.pinkcart{
     max-height: 5vw;
     max-width: 5vw;
     height: 2vw;
@@ -187,9 +187,9 @@ article{
 
 .bredpil{
     height:4vw;
-    max-height: 4vw;
+    max-height: 5vw;
     width: 1vw;
-    max-width: 1vw;
+    max-width: 2vw;
     margin:auto;
 }
 
@@ -306,6 +306,48 @@ h7{
         display:none;
     }
 
+    .nonedisplay-tablet{
+        display:none;
+    }
+
+    article{
+        width: 20vw;
+        margin: 0.5vw;
+    }
+
+    .article-image{
+        width: 19vw;
+        height: 15vw;
+    }
+
+    .pinkcart{
+        max-height:5vw;
+        max-width: 5vw;
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+    h4{
+        font-size: 1.7vw;
+    }
+
+    h5{
+        font-size: 3.5vw;
+    }
+
+    .typ{
+        font-size: 1.5vw;
+    }
+
+    .namn, .wear{
+        font-size: 2vw;
+    }
+
+    .bredpil{
+        height: 5vw;
+        width:1.2;
+    }
+
     #info-box{
         margin:auto;
 
@@ -330,6 +372,7 @@ h7{
         display:none;
         padding:0%;
     }
+
 
 }
 
