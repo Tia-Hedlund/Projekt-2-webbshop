@@ -283,7 +283,6 @@ h7{
 .info{
     display: flex;
     flex-direction: column;
-
     padding:2vw;
 }
 
@@ -299,8 +298,23 @@ h7{
 
 }
 
+#kundvagn-top{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#kundvagn-pil{
+    height: 1vw;
+    width: 1vw;
+    margin-right:2vw;
+    margin-left: 1vw;
+}
+
 #kundvagn-titel{
-    margin:0%;
+    margin-top: 0.3vw;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 /* Tablett */
