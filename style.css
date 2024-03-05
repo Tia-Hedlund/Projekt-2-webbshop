@@ -7,6 +7,16 @@ body{
     color: #FFFFFF;
     font-family: 'Anek Devanagari', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin:0%;
+    letter-spacing: 0.08vw;
+}
+
+h2, #searchbar, .litenpil, #cart, #login, #favorites, .rosapil, .pinkcart, .bredpil, #kundvagn-pil{
+    cursor: pointer;
+}
+
+.pinkcart:hover, .bredpil:hover, litenpil:hover, #cart:hover, #favorites:hover, #login:hover, .rosapil:hover, #kundvagn-pil:hover{
+    filter: brightness(80%) drop-shadow(0 0 0.2vw rgba(51, 27, 54, 0.459));
+
 }
 
 #topbox{
@@ -71,6 +81,7 @@ nav{
     height: 3vw;
     width: 3vw;
     margin-right: 1.9vw;
+
 }
 
 #lower-topbox{
@@ -98,7 +109,9 @@ nav{
 #favorites{
     height: 3vw;
     margin-right: 1.9vw;
+
 }
+
 
 .litenpil{
     height: 0.5vw;
@@ -181,7 +194,7 @@ article{
 .article-image{
     width: 9.4vw;
     height: 7vw;
-
+    filter: drop-shadow(0 0 0.2vw rgba(21, 11, 22, 0.459));
 }
 
 .bredpil{
@@ -287,14 +300,14 @@ h7{
 }
 
 #kundvagn{
-    background-color: #16101C;
-    border-radius: 20px;
+    background-color: #45133d;
+    width: 25vw;
+    /*
     grid-column: 3/5;
     grid-row: 1/2;
-
-    margin: 1.9vw;
-    padding: 1.5vw;
-    opacity:0.5;
+    */
+    position: fixed;
+    inset: 0 0 0 auto; 
 
 }
 
@@ -302,6 +315,8 @@ h7{
     display:flex;
     flex-direction: row;
     align-items: center;
+    margin: 2vw;
+    margin-left: 1vw;
 }
 
 #kundvagn-pil{
@@ -315,7 +330,55 @@ h7{
     margin-top: 0.3vw;
     margin-left: 0%;
     margin-right: 0%;
+    font-size: 1.4vw;
 }
+
+.btn-div{
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.btn-div button{
+    border: none;
+    color:#FFFFFF;
+    padding: 1.5vw;
+    cursor:pointer;
+    letter-spacing: 0.2vw;
+}
+
+.btn-checkOut{
+    background-color: #110D13;
+}
+
+.btn-kundvagn{
+    background-color: #45133d;
+
+}
+
+#kundvagn #kundvagn-artiklar .vara img{
+    width: 110%;
+}
+
+.vara{
+    background-color: #310d2b;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 2vw;
+    align-items: center;
+    padding: 1vw;
+}
+
+
+.vara button{
+    background-color: #1a0616;
+    color: #FFFFFF;
+    border:none;
+    width: 100%;
+    padding: 0.7vw;
+    border-radius: 5vw;
+    font-size: 1vw;
+}
+
 
 /* Tablett */
 @media only screen and (min-width: 641px) and (max-width: 1007px) {
