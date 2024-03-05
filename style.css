@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 10% 50% 30% 10%;
     grid-template-rows: 3/8 4/8 1/8;
 
     background-color: #16101C;
@@ -11,7 +11,7 @@ body{
 
 #topbox{
     grid-row: 1/2;
-    grid-column: 1/4;
+    grid-column: 1/5;
 
     background-image: url("./img/csgoskins.webp");
     background-repeat: no-repeat;
@@ -68,8 +68,8 @@ nav{
 }
 
 #cart{
-    max-height: 3vw;
-    max-width: 3vw;
+    height: 3vw;
+    width: 3vw;
     margin-right: 1.9vw;
 }
 
@@ -91,13 +91,11 @@ nav{
 }
 
 #login{
-    max-height: 4vw;
     height: 3vw;
     margin-right: 1vw;  
 }
 
 #favorites{
-    max-height: 4vw;
     height: 3vw;
     margin-right: 1.9vw;
 }
@@ -120,7 +118,7 @@ main{
     display: flex;
     flex-direction: column;
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 2/4;
     margin: auto;
     padding: 2vw;
     margin-bottom: 3vw;
@@ -188,9 +186,7 @@ article{
 
 .bredpil{
     height:4vw;
-    max-height: 5vw;
     width: 1vw;
-    max-width: 2vw;
     margin:auto;
 }
 
@@ -233,7 +229,7 @@ h5{
 
 footer{
     grid-row: 3/4;
-    grid-column: 1/4;
+    grid-column: 1/5;
     background-color:  #110D13;
     margin: 0%;
     padding-bottom: 3vw;
@@ -291,11 +287,27 @@ h7{
     padding:2vw;
 }
 
+#kundvagn{
+    background-color: #16101C;
+    border-radius: 20px;
+    grid-column: 3/5;
+    grid-row: 1/2;
+
+    margin: 1.9vw;
+    padding: 1.5vw;
+    opacity:0.5;
+
+}
+
+#kundvagn-titel{
+    margin:0%;
+}
+
 /* Tablett */
 @media only screen and (min-width: 641px) and (max-width: 1007px) {
     body{
         display: grid;
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 10% 50% 30% 10%;
         grid-template-rows: 3/8 4/8 1/8;
     }
 
@@ -322,11 +334,11 @@ h7{
 
     #searchbar, #cart{
         margin-top: 2.4vw;
-        max-height: 3.5vw;
+        height: 3.5vw;
     }
 
     #cart{
-        max-width: 3.5vw;
+        width: 3.5vw;
     }
 
     #login, #favorites{
@@ -352,7 +364,7 @@ h7{
 
     .article-image{
         width: 19vw;
-        height: 15vw;
+        height: 13vw;
     }
 
     .pinkcart{
@@ -380,7 +392,7 @@ h7{
 
     .bredpil{
         height: 5vw;
-        width:1.2;
+        width:1.2vw;
     }
 
     #info-box{
@@ -408,14 +420,13 @@ h7{
         padding:0%;
     }
 
-
 }
 
 /* Mobile */
 @media only screen and (max-width: 640px) {
     body{
         display: grid;
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 10% 50% 30% 10%;
         grid-template-rows: 3/8 4/8 1/8;
     }
 
@@ -424,37 +435,51 @@ h7{
     }
 
     header{
-        margin-left: 2vw;
+        margin-left: 4vw;
     }
 
     h1{
-        font-size: 2.4vw;
+        font-size: 4vw;
     }
 
     h2{
-        font-size: 2.2vw;
-        margin-right: 0.4vw;
+        font-size: 3vw;
+        margin-left: 3.3vw;
     }
 
     h3{
         display:none;
     }
 
-    #searchbar, #cart{
-        margin-top: 2.4vw;
-        max-height: 3.5vw;
+    .litenpil{
+        display:none;
+    }
+
+    #searchbar{
+        display:none;
     }
 
     #cart{
-        max-width: 3.5vw;
+        margin-top: 3.5vw;
+        height: 5vw;
+        width: 5vw;
+        margin-right: 3.5vw;
+    }
+
+    #cs-logo{
+        display:none;
+    }
+
+    #lower-right{
+        margin-left: auto;
     }
 
     #login, #favorites{
-        height: 4vw;
+        height: 5vw;
     }
 
     #favorites{
-        width: 4vw;
+        width: 5vw;
     }
 
     aside{
@@ -480,6 +505,7 @@ h7{
     .pinkcart{
         height: 7vw;
         width: 7vw;
+        padding: 2vw;
     }
 
     h4{
@@ -504,16 +530,18 @@ h7{
 
 
     .bredpil{
-        height: 5vw;
-        width:1.2;
+        height: 16vw;
+        width: 3vw;
+        margin-left: 2vw;
     }
 
     #info-box{
-        margin:auto;
 
         display:flex;
         flex-direction: column;
         margin-top: 4vw;
+        margin-left: 18vw;
+
     }
 
     h6{
@@ -521,11 +549,12 @@ h7{
     }
 
     h7, .info-text{
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     h7{
         margin-top: 10vw;
+
     }
 
     #logo-box{
@@ -535,3 +564,4 @@ h7{
 
 
 }
+
