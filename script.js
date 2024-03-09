@@ -46,12 +46,21 @@ function addToOl (){
 
     /*lägg till lista grej index*/ 
     arrayProduktKundvagn.forEach(item => {
-        let liProdukt = document.createElement("div");
-        liProdukt.textContent = `${item.namn} ${item.pris}kr`;
+        let produkt = document.createElement("div");
 
-        liProdukt.classList.add("produktIKundvagn");
-        divKundvagn.appendChild(liProdukt);
+        let namnSpan = document.createElement("span");
+        namnSpan.textContent = `${item.namn}`;
+        namnSpan.classList.add("produktNamn");
 
+        let prisSpan = document.createElement("span");
+        prisSpan.textContent = `${item.pris} kr`;
+        prisSpan.classList.add("produktPris");
+
+        produkt.appendChild(namnSpan);
+        produkt.appendChild(prisSpan);
+
+        produkt.classList.add("produktIKundvagn");
+        divKundvagn.appendChild(produkt);
     })
 }
 
