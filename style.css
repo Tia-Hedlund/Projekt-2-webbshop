@@ -310,6 +310,7 @@ h7{
     padding:2vw;
 }
 
+/* Kundvagn CSS*/ 
 #kundvagn{
     background-color: #2f0b29;
     width: 25vw;
@@ -325,6 +326,7 @@ h7{
     align-items: center;
     margin: 2vw;
     margin-left: 1vw;
+    margin-bottom: 0%;
 }
 
 #kundvagn-pil{
@@ -335,26 +337,22 @@ h7{
 }
 
 #kundvagn-titel{
+    margin: 0%;
     margin-top: 0.3vw;
-    margin-left: 0%;
-    margin-right: 0%;
+
 }
 
-.kundvagn-artiklar{
+#divKundvagn{
+    padding: 2vw;
     overflow: auto;
 }
 
-.btn-div{
-    display:grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row: 2/3;
+#tömKundvagn{
     position: absolute;
+    background-color:#22071e;
     bottom: 0;
     right:0;
     width: 100%;
-}
-
-.btn-div button{
     border: none;
     color:#FFFFFF;
     padding: 1.5vw;
@@ -362,42 +360,9 @@ h7{
     letter-spacing: 0.2vw;
 }
 
-.btn-checkOut{
-    background-color: #110D13;
+.produktIKundvagn{
+    
 }
-
-.btn-kundvagn{
-    background-color: #2f0b29;
-
-}
-
-#kundvagn #kundvagn-artiklar .vara img{
-    width: 110%;
-}
-
-.vara{
-    background-color: #1f081b;
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    gap: 2vw;
-    align-items: center;
-    padding: 0.7vw;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-    margin-bottom: 0.1vw;
-}
-
-
-.vara button{
-    background-color: #1a0616;
-    color: #FFFFFF;
-    border:none;
-    width: 100%;
-    padding: 0.7vw;
-    border-radius: 5vw;
-    font-size: 1vw;
-}
-
 
 /* Tablett */
 @media only screen and (min-width: 641px) and (max-width: 1007px) {

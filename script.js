@@ -1,7 +1,7 @@
 const kundvagnIkon = document.getElementById('cart');
 const kundvagnPil = document.getElementById('kundvagn-pil')
 const kundvagn = document.getElementById('kundvagn');
-let olKundvagn = document.querySelector("#olKundvagn");
+let divKundvagn = document.querySelector("#divKundvagn");
 
 let arrayProduktKundvagn = [];
 
@@ -42,13 +42,16 @@ function hämtaFrånLocal(){
 
 /*skapa en array för artiklarna*/
 function addToOl (){
-    olKundvagn.innerHTML = ''; // Rensar befintliga varor
+    divKundvagn.innerHTML = ''; // Rensar befintliga varor
 
     /*lägg till lista grej index*/ 
     arrayProduktKundvagn.forEach(item => {
-        let liProdukt = document.createElement("li");
+        let liProdukt = document.createElement("div");
         liProdukt.textContent = `${item.namn} ${item.pris}kr`;
-        olKundvagn.appendChild(liProdukt);
+
+        liProdukt.classList.add("produktIKundvagn");
+        divKundvagn.appendChild(liProdukt);
+
     })
 }
 
