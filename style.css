@@ -312,7 +312,7 @@ h7{
 
 /* Kundvagn CSS*/ 
 #kundvagn{
-    background-color: #2f0b29;
+    background-color: #2c0b26;
     width: 25vw;
     display: grid;
     grid-template-rows: 5vw 1fr 10vw;
@@ -361,7 +361,7 @@ h7{
 }
 
 .produktIKundvagn{
-    background-color: #23081e;
+    background-color: #390e32;
     margin: 0.3vw;
     padding: 1vw;
     display: flex;
@@ -370,10 +370,9 @@ h7{
 }
 
 .produktPris{
-    color: #FF86DD;
+    color: #ff9be3;
     font-weight: 1000;
 }
-
 
 
 /* Tablett */

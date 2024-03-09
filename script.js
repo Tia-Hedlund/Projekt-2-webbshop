@@ -64,6 +64,17 @@ function addToOl (){
     })
 }
 
+// tömma kundvagnen och local storage
+function tömKundvagn(){
+    arrayProduktKundvagn = [];
+    localStorage.clear();
+    
+    var kundvagnElement = document.getElementById("divKundvagn");
+    kundvagnElement.innerHTML = "";
+
+}
+
 window.onload = hämtaFrånLocal();
+
 
 
