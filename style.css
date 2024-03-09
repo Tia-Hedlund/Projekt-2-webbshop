@@ -160,6 +160,10 @@ aside{
     height: 7vw;
 }
 
+.item-image:hover{
+    filter: drop-shadow(0 0 0.5vw rgba(149, 40, 114, 0.623));
+}
+
 .rosapil{
     height:4vw;
     max-height: 4vw;
@@ -172,6 +176,10 @@ aside{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+article:hover{
+    filter: drop-shadow(0 0 0.2vw rgba(149, 40, 115, 0.459));
 }
 
 article{
@@ -197,6 +205,9 @@ article{
     filter: drop-shadow(0 0 0.2vw rgba(21, 11, 22, 0.459));
 }
 
+.article-image:hover{
+    cursor: pointer;
+}
 .bredpil{
     height:4vw;
     width: 1vw;
@@ -300,15 +311,12 @@ h7{
 }
 
 #kundvagn{
-    background-color: #45133d;
+    background-color: #2f0b29;
     width: 25vw;
-    /*
-    grid-column: 3/5;
-    grid-row: 1/2;
-    */
+    display: grid;
+    grid-template-rows: 5vw 1fr 10vw;
     position: fixed;
     inset: 0 0 0 auto; 
-
 }
 
 #kundvagn-top{
@@ -330,12 +338,20 @@ h7{
     margin-top: 0.3vw;
     margin-left: 0%;
     margin-right: 0%;
-    font-size: 1.4vw;
+}
+
+.kundvagn-artiklar{
+    overflow: auto;
 }
 
 .btn-div{
     display:grid;
     grid-template-rows: repeat(2, 1fr);
+    grid-row: 2/3;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 100%;
 }
 
 .btn-div button{
@@ -351,7 +367,7 @@ h7{
 }
 
 .btn-kundvagn{
-    background-color: #45133d;
+    background-color: #2f0b29;
 
 }
 
@@ -360,12 +376,15 @@ h7{
 }
 
 .vara{
-    background-color: #310d2b;
+    background-color: #1f081b;
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     gap: 2vw;
     align-items: center;
-    padding: 1vw;
+    padding: 0.7vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.1vw;
 }
 
 
