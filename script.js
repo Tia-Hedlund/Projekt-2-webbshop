@@ -22,57 +22,36 @@ function add(namn, pris){
     }
     arrayProduktKundvagn.push(produkt);
     console.log(arrayProduktKundvagn);
+    addToOl();
+    sparaKundvagnILocal();
 }
 
 let jsonLi;
-let jsonVärde;
 
-/*skapa en array för artiklarna*/
-
-function addToOl (){
-    /*lägg till lista grej index*/ 
-    let liProdukt = document.createElement("li");
-    liProdukt.textContent = namn+pris;
-
-    olKundvagn.appendChild(liProdukt);
-
-    jsonLi = JSON.stringify(arrayProduktKundvagn);
-    window.localStorage.setItem(521, jsonLi);
+function sparaKundvagnILocal() {
+    localStorage.setItem('KundvagnLocal', JSON.stringify(arrayProduktKundvagn))
 }
 
 function hämtaFrånLocal(){
-    jsonVärde = window.localStorage.getItem(521);
-    if (jsonVärde){
-        arrayProduktKundvagn = JSON.parse(jsonVärde);
+    const kundvagnFrånLocal = localStorage.getItem('KundvagnLocal');
+    if (kundvagnFrånLocal){
+        arrayProduktKundvagn = JSON.parse(kundvagnFrånLocal)
         addToOl();
     }
 }
 
-hämtaFrånLocal();
+/*skapa en array för artiklarna*/
+function addToOl (){
+    olKundvagn.innerHTML = ''; // Rensar befintliga varor
 
-
-
-
-
-
-
-
-
-
-
-
-
-function createCartItem(name, price, imgSrc) {
-    return `
-    <div class="bild">
-        <img src="${imgSrc}" alt="">
-    </div>
-    <div class="vara-text">
-        <div class="name">${name}</div>
-        <div class="pris">${price}</div>
-    </div>
-    <button>TA BORT</button>
-    `;
+    /*lägg till lista grej index*/ 
+    arrayProduktKundvagn.forEach(item => {
+        let liProdukt = document.createElement("li");
+        liProdukt.textContent = `${item.namn} ${item.pris}kr`;
+        olKundvagn.appendChild(liProdukt);
+    })
 }
+
+window.onload = hämtaFrånLocal();
 
 
