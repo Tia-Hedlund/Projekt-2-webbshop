@@ -10,11 +10,11 @@ body{
     letter-spacing: 0.08vw;
 }
 
-h2, #searchbar, .litenpil, #cart, #login, #favorites, .rosapil, .pinkcart, .bredpil, #kundvagn-pil{
+h2, #sökruta, .litenpil, #kundvagnIkon, #loggain, #favoriter, .rosapil, .rosaKundvagnIkon, .bredpil, #kundvagn-pil{
     cursor: pointer;
 }
 
-.pinkcart:hover, .bredpil:hover, litenpil:hover, #cart:hover, #favorites:hover, #login:hover, .rosapil:hover, #kundvagn-pil:hover{
+.rosaKundvagnIkon:hover, .bredpil:hover, litenpil:hover, #kundvagnIkon:hover, #favoriter:hover, #loggain:hover, .rosapil:hover, #kundvagn-pil:hover{
     filter: brightness(80%) drop-shadow(0 0 0.2vw rgba(51, 27, 54, 0.459));
 
 }
@@ -68,23 +68,23 @@ nav{
     width: 50vw;
 }
 
-#searchbar, #cart{
+#sökruta, #kundvagnIkon{
     margin-top: 1.9vw;
 }
 
-#searchbar{
+#sökruta{
     max-height: 3vw;
     margin-right: 1vw;
 }
 
-#cart{
+#kundvagnIkon{
     height: 3vw;
     width: 3vw;
     margin-right: 1.9vw;
 
 }
 
-#lower-topbox{
+#nedre-topbox{
     display: flex;
     flex-direction: row;
 
@@ -97,16 +97,16 @@ nav{
     padding: 1.9vw;
 }
 
-#login, #favorites{
+#loggain, #favoriter{
     margin-bottom: 1.4vw;
 }
 
-#login{
+#loggain{
     height: 3vw;
     margin-right: 1vw;  
 }
 
-#favorites{
+#favoriter{
     height: 3vw;
     margin-right: 1.9vw;
 
@@ -147,7 +147,7 @@ aside{
     margin-bottom: 4vw;
 }
 
-.items-container{
+.artikel2-div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,12 +155,12 @@ aside{
     padding: 1vw;
 }
 
-.item-image{
+.artikel2-img{
     width: 9.4vw;
     height: 7vw;
 }
 
-.item-image:hover{
+.artikel2-img:hover{
     filter: drop-shadow(0 0 0.5vw rgba(149, 40, 114, 0.623));
 }
 
@@ -172,7 +172,7 @@ aside{
     margin:auto;
 }
 
-#article-container{
+#artikel-div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -192,20 +192,20 @@ article{
     justify-content: space-evenly;
 }
 
-.pinkcart{
+.rosaKundvagnIkon{
 
     height: 2vw;
     width: 2vw;
     margin-left:auto;
 }
 
-.article-image{
+.artikel-img{
     width: 9.4vw;
     height: 7vw;
     filter: drop-shadow(0 0 0.2vw rgba(21, 11, 22, 0.459));
 }
 
-.article-image:hover{
+.artikel-img:hover{
     cursor: pointer;
 }
 .bredpil{
@@ -234,7 +234,7 @@ h5{
     margin-bottom: 0vw;
 }
 
-.typ, .item-namn{
+.typ, .artikel2-namn{
     font-size: 1vw;
     font-weight: lighter;
 }
@@ -272,7 +272,7 @@ footer{
     align-items: center;
 }
 
-#title-box{
+#titel-box{
     display: flex;
     flex-direction: row;
 }
@@ -413,20 +413,20 @@ h7{
         display:none;
     }
 
-    #searchbar, #cart{
+    #sökruta, #kundvagnIkon{
         margin-top: 2.4vw;
         height: 3.5vw;
     }
 
-    #cart{
+    #kundvagnIkon{
         width: 3.5vw;
     }
 
-    #login, #favorites{
+    #loggain, #favoriter{
         height: 4vw;
     }
 
-    #favorites{
+    #favoriter{
         width: 4vw;
     }
 
@@ -443,12 +443,12 @@ h7{
         margin: 0.5vw;
     }
 
-    .article-image{
+    .artikel-img{
         width: 19vw;
         height: 13vw;
     }
 
-    .pinkcart{
+    .rosaKundvagnIkon{
         max-height:5vw;
         max-width: 5vw;
         height: 4.5vw;
@@ -540,11 +540,11 @@ h7{
         display:none;
     }
 
-    #searchbar{
+    #sökruta{
         display:none;
     }
 
-    #cart{
+    #kundvagnIkon{
         margin-top: 3.5vw;
         height: 5vw;
         width: 5vw;
@@ -555,11 +555,11 @@ h7{
         display:none;
     }
 
-    #lower-right{
+    #nedre-right{
         margin-left: auto;
     }
 
-    #login, #favorites{
+    #loggain, #favoriter{
         height: 7vw;
     }
 
@@ -577,13 +577,13 @@ h7{
         padding-bottom: 5vw;
     }
 
-    .article-image{
+    .artikel-img{
         width: 45vw;
         height: 31vw;
         margin:auto;
     }
 
-    .pinkcart{
+    .rosaKundvagnIkon{
         height: 7vw;
         width: 7vw;
         padding: 2vw;

@@ -1,4 +1,4 @@
-const kundvagnIkon = document.getElementById('cart');
+const kundvagnIkon = document.getElementById('kundvagnIkon');
 const kundvagnPil = document.getElementById('kundvagn-pil')
 const kundvagn = document.getElementById('kundvagn');
 let divKundvagn = document.querySelector("#divKundvagn");
