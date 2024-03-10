@@ -347,7 +347,6 @@ h7{
 #kundvagn-titel{
     margin: 0%;
     margin-top: 0.3vw;
-
 }
 
 #divKundvagn{
@@ -376,6 +375,7 @@ h7{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .produktPris{
@@ -501,6 +501,10 @@ h7{
         padding:0%;
     }
 
+    #kundvagn{
+        width: 33vw;
+    }
+
 }
 
 /* Mobile */
@@ -556,11 +560,7 @@ h7{
     }
 
     #login, #favorites{
-        height: 5vw;
-    }
-
-    #favorites{
-        width: 5vw;
+        height: 8vw;
     }
 
     aside{
@@ -643,6 +643,48 @@ h7{
         padding:0%;
     }
 
+    #kundvagn{
+        width: 100vw;
+    }
+
+    #kundvagn-pil{
+        height: 4vw;
+        width: 4vw;
+        padding: 6vw;
+    }
+    
+    #kundvagn-titel{
+        margin: 0%;
+        margin-top: 0.3vw;
+        font-size: 6vw;
+    }
+    
+    #divKundvagn{
+        height: 100%;
+        padding: 0.3;
+    }
+    
+    #tömKundvagn{
+        font-size: 3vw;
+        height: 12vw;
+    }
+
+    .produktIKundvagn{
+        padding: 5vw;
+        margin: 1.5vw;
+        margin-left: 1.5vw;
+    }
+
+    .produktPris{
+        color: #ff9be3;
+        font-weight: 1000;
+        font-size: 6vw;
+    }
+
+    .produktNamn{
+        font-size: 5vw;
+        padding: 4vw;
+    }
 
 }
 
