@@ -460,7 +460,7 @@ h7{
     }
 
     h5{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     .typ{
@@ -560,7 +560,7 @@ h7{
     }
 
     #login, #favorites{
-        height: 8vw;
+        height: 7vw;
     }
 
     aside{
@@ -594,7 +594,7 @@ h7{
     }
 
     h5{
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .typ{
@@ -656,7 +656,7 @@ h7{
     #kundvagn-titel{
         margin: 0%;
         margin-top: 0.3vw;
-        font-size: 6vw;
+        font-size: 5vw;
     }
     
     #divKundvagn{
@@ -670,7 +670,7 @@ h7{
     }
 
     .produktIKundvagn{
-        padding: 5vw;
+        padding: 3.5vw;
         margin: 1.5vw;
         margin-left: 1.5vw;
     }
