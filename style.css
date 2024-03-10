@@ -520,20 +520,39 @@ h7{
     }
 
     header{
-        margin-left: 4vw;
+        padding-left: 3vw;
     }
 
     h1{
         font-size: 4vw;
+        margin: auto;
     }
 
     h2{
-        font-size: 3vw;
-        margin-left: 3.3vw;
+        font-size: 3.5vw;
+        text-shadow: rgb(0, 0, 0) 0.3vw 0vw 0.2vw;
     }
 
     h3{
         display:none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-left{
+        margin: 2vw;
+        padding: 3vw;
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    #nav-right{
+        margin-left: auto;
     }
 
     .litenpil{
@@ -546,8 +565,8 @@ h7{
 
     #kundvagnIkon{
         margin-top: 3.5vw;
-        height: 5vw;
-        width: 5vw;
+        height: 7vw;
+        width: 7vw;
         margin-right: 3.5vw;
     }
 
